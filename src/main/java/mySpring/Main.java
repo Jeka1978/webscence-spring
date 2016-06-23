@@ -9,6 +9,7 @@ public class Main {
         ObjectFactory factory = ObjectFactory.getInstance();
         IRobot iRobot = factory.createObject(IRobot.class);
         iRobot.cleanRoom();
+        System.out.println(iRobot.getClass());
 
       /*  Elf elf = factory.createObject(Elf.class);
         Elf elf2 = factory.createObject(Elf.class);
