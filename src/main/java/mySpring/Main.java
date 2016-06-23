@@ -5,9 +5,14 @@ package mySpring;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-       /* IRobot iRobot = new IRobot();
-        iRobot.cleanRoom();*/
-        Elf elf = ObjectFactory.getInstance().createObject(Elf.class);
+
+        ObjectFactory factory = ObjectFactory.getInstance();
+        IRobot iRobot = factory.createObject(IRobot.class);
+        iRobot.cleanRoom();
+
+      /*  Elf elf = factory.createObject(Elf.class);
+        Elf elf2 = factory.createObject(Elf.class);
         System.out.println(elf);
+        System.out.println(elf2);*/
     }
 }

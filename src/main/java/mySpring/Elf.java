@@ -14,4 +14,8 @@ public class Elf {
     private int power;
 
 
+    @InjectRandomName
+    private String  name;
+
+
 }
