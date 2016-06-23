@@ -1,5 +1,7 @@
 package mySpring;
 
+import javax.annotation.PostConstruct;
+
 /**
  * Created by Evegeny on 21/06/2016.
  */
@@ -8,6 +10,14 @@ public class IRobot {
     private Speaker speaker;
     @InjectByType
     private Cleaner cleaner;
+
+
+    @PostConstruct
+    public void init(){
+        System.out.println(cleaner.getClass().getSimpleName());
+    }
+
+
 
     /*public IRobot() throws Exception {
         speaker = ObjectFactory.getInstance().createObject(Speaker.class);
